@@ -5,14 +5,14 @@ def stock_picker(array)
   diff=0
   
   (length-1).downto(0) do |i|
-    puts "#{i} ho "
+ 
     0.upto(i) do |k|
-      puts "#{k} hi"
+   
       if array[i] - array[k]> diff
         best_buy=i
         best_sell=k
         diff=array[i]-array[k]
-        puts diff
+       
       end
     end
     
